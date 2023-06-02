@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -148,3 +149,14 @@ footer {
   font-size: 14px;
   text-align: center;
 }
+
+@media (min-width: 1000px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
